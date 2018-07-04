@@ -6,12 +6,16 @@ import router from './router'
 import 'lib-flexible/flexible'
 import Axios from './axios/index'
 import MintUI from 'mint-ui'
+import * as Filter from './utils/filter'
 import 'mint-ui/lib/style.css'
 import './assets/css/reset.css'
 import './assets/css/app.css'
 Vue.prototype.$axios = Axios
 Vue.config.productionTip = false
 Vue.use(MintUI)
+Object.keys(Filter).forEach(key => {
+  Vue.filter(key, Filter[key])
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

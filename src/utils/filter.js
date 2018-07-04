@@ -4,7 +4,7 @@
  * @param n 要保留的小数位数
  * @author byboating
  */
-function fMoney (num, n) {
+let fMoney = (num, n) => {
   if (n !== 0) {
     n = n > 0 && n <= 20 ? n : 2
   }
@@ -15,7 +15,7 @@ function fMoney (num, n) {
   }
   num = Math.abs(num)
 
-  num = parseFloat((num + '').replace(/[^\d\.-]/g, '')).toFixed(n) + ''
+  num = parseFloat((num + '').replace(/[^\d.-]/g, '')).toFixed(n) + ''
   let l = num.split('.')[0].split('').reverse()
   let r = num.split('.')[1]
   let t = ''
@@ -37,7 +37,12 @@ function fMoney (num, n) {
  * @returns {Number}
  * @author byboating
  */
-function rMoney (formattedNum) {
+let rMoney = (formattedNum) => {
   formattedNum = formattedNum + ''
-  return parseFloat(formattedNum.replace(/[^\d\.-]/g, ''))
+  return parseFloat(formattedNum.replace(/[^\d.-]/g, ''))
+}
+
+export {
+  fMoney,
+  rMoney
 }

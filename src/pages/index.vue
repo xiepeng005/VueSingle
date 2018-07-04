@@ -19,7 +19,7 @@
             </a>
           </li>
           <li>
-            <a class="flex-box">
+            <a href="/about/introduction/493" class="flex-box">
               <div class="flex-box icon icon-blue">
                 <img src="/static/img/icon_dealrecord.png">
               </div>
@@ -38,7 +38,7 @@
             <dd class="separate"></dd>
             <dd class="flex">盈利<span class="font-red">100%</span>归您</dd>
           </dl>
-          <a class="btn" href="/trade/interestFree.html">立即申请</a>
+          <a class="btn" href="/trade/interestFree">立即申请</a>
         </div>
       </div>
       <div class="index-product">
@@ -50,7 +50,7 @@
             <dd class="separate"></dd>
             <dd class="flex">盈利<span class="font-yel">100%</span>归您</dd>
           </dl>
-          <a class="btn btn-yel" href="/trade/dayTrade.html">立即申请</a>
+          <a class="btn btn-yel" href="/trade/dayTrade">立即申请</a>
         </div>
       </div>
       <div class="index-product">
@@ -62,7 +62,7 @@
             <dd class="separate"></dd>
             <dd class="flex">盈利<span class="font-blue">100%</span>归您</dd>
           </dl>
-          <a class="btn btn-blue" href="/trade/monthTrade.html">立即申请</a>
+          <a class="btn btn-blue" href="/trade/monthTrade">立即申请</a>
         </div>
       </div>
     </div>

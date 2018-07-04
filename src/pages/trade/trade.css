@@ -1,0 +1,165 @@
+.trade-detail {
+  background: #fff;
+}
+
+.trade-detail li {
+  text-align: right;
+  display: flex;
+  padding: 0 40px;
+  font-size: 28px;
+  line-height: 84px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.trade-detail li + li {
+}
+
+.trade-detail li .label {
+  width: 160px;
+  text-align: left;
+}
+
+.trade-detail li .flex {
+  flex: 1;
+}
+
+.trade-detail li .flex span.font12 {
+  font-size: 24px;
+  color: #666;
+}
+
+.trade-money {
+  background: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.trade-money .money-total {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.trade-money .money-total > strong {
+  color: #c80106;
+  font-size: 48px;
+}
+
+.trade-money .money-total > span {
+  font-size: 24px;
+  color: #666666;
+}
+
+.trade-money .money-detail {
+  position: relative;
+  height: 144px;
+  z-index: 2;
+}
+
+.trade-money .money-detail:before {
+  content: '';
+}
+
+.trade-money .money-detail .money-openline,
+.trade-money .money-detail .money-warn {
+  position: absolute;
+  left: 25%;
+  transform: translateX(-50%);
+  text-align: center;
+  top: 0;
+  color: #666;
+  font-size: 24px;/*px*/
+  line-height: 72px;
+  z-index: 2;
+}
+
+.trade-money .money-detail .money-warn span {
+}
+
+.trade-money .money-detail .money-openline:before,
+.trade-money .money-detail .money-openline:after,
+.trade-money .money-detail .money-warn:before,
+.trade-money .money-detail .money-warn:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 16px;
+  width: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+  border-radius: 50%;
+  background: #c80106;
+}
+
+.trade-money .money-detail .money-openline:after,
+.trade-money .money-detail .money-warn:after {
+  border: 1px solid #d84d50;
+  height: 24px;
+  width: 24px;
+  background: none;
+  margin-top: -12px;
+  margin-left: -12px;
+}
+
+.trade-money .money-detail .money-openline {
+  left: 60%;
+  z-index: 1;
+}
+
+.trade-money .money-detail .money-openline span {
+}
+
+.trade-money .money-detail .money-lines {
+  height: 8px;
+  background: #c7070c;
+  position: absolute;
+  left: 0;
+  top: 68px;
+  width: 100%;
+  z-index: -1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.trade-money .money-detail .money-lines .lines1,
+.trade-money .money-detail .money-lines .lines2 {
+  background: #ffcecf;
+  position: absolute;
+  height: 8px;
+  top: 0;
+  left: 0;
+  width: 25%;
+}
+
+.trade-money .money-detail .money-lines .lines2 {
+  background: #fb8285;
+  left: 25%;
+  width: 35%;
+}
+
+.trade-bottom {
+  background: #fff;
+  padding: 20px 84px;
+}
+
+.trade-bottom .check-box {
+  color: #999999;
+  font-size: 24px;
+}
+
+.trade-rules {
+  background: #fff;
+  padding: 30px 40px;
+}
+
+.trade-rules .title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.trade-rules p {
+  font-size: 28px;
+  line-height: 1.8em;
+}
