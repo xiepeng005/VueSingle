@@ -83,7 +83,7 @@ a:hover {
 
 a:hover,
 a:focus {
-    color: #23527c;
+    color: inherit;
     text-decoration: underline;
 }
 

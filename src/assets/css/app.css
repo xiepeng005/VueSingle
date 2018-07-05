@@ -1,7 +1,9 @@
 body {
   background: #f7f4f8
 }
-
+[v-cloak]{
+  display: none !important;
+}
 a:hover, a:focus {
   text-decoration: none
 }
@@ -19,6 +21,20 @@ i, em {
   font-style: normal;
 }
 
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 .m-body{
   padding-bottom: 20px;
   padding-top: 88px;
@@ -29,6 +45,7 @@ i, em {
 .m-body-pt0{
   padding-top: 0;
 }
+
 .mt10{
   margin-top: 20px !important;
 }
@@ -84,4 +101,33 @@ i, em {
 .btn.btn-outline {
   background: none;
   color: #333;
+}
+
+.check-box input {
+  display: none;
+}
+
+.check-box input ~ label {
+  position: relative;
+  padding-left: 40px;
+}
+
+.check-box input ~ label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 28px;
+  width: 28px;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #9d9d9d;
+  border-radius: 50%;
+}
+
+.check-box input:checked ~ label:before {
+  content: '√';
+  color: #9d9d9d;
+  font-size: 24px;/*px*/
 }

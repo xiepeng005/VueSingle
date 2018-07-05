@@ -1,3 +1,124 @@
+.trade-nav ul {
+  background: #fff;
+  display: flex;
+  border-bottom: 1px solid #ea4448;
+}
+
+.trade-nav li {
+  width: 50%;
+  text-align: center;
+  height: 80px;
+  line-height: 80px;
+}
+
+.trade-nav li a {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;/*px*/
+}
+
+.trade-nav li a.active {
+  color: #ea4448;
+}
+
+.trade-nav li a.active:after {
+  content: '';
+  position: absolute;
+  background: #ea4448;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.trade-content .trade-top {
+  background: #fff;
+  padding: 0 20px 20px;
+  margin-top: 20px;
+}
+
+.trade-content .trade-top-container {
+  border-radius: 10px;
+  margin: 20px;
+  padding-top: 20px;
+}
+
+.trade-top .trade-top-title {
+  color: #666;
+  padding: 0 20px;
+}
+
+.trade-top .trade-top-title p {
+  color: #999999;
+}
+
+.trade-money-list {
+  padding: 0 20px;
+}
+
+.trade-money-list ul {
+}
+
+.trade-money-list li {
+  width: 32%;
+  box-sizing: border-box;
+  font-family: Arial;
+  float: left;
+  text-align: center;
+  height: 84px;
+  line-height: 84px;
+  border: 1px solid #c80106;
+  color: #c80106;
+  margin-top: 20px;
+  font-size: 36px;/*px*/
+  border-radius: 10px;
+}
+
+.trade-money-list li + li {
+  margin-left: 2%;
+}
+
+.trade-money-list li:nth-child(3n + 1) {
+  margin-left: 0;
+}
+
+.trade-money-list li.other {
+  font-size: 28px;/*px*/
+}
+
+.trade-money-list li.active {
+  color: #fff;
+  background: #c80106;
+}
+
+.trade-money-list .input-group {
+}
+
+.trade-money-list .input-group .input {
+  border: 1px solid #c80106;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 84px;
+  line-height: 84px;
+}
+
+.trade-money-list.trade-money-time li {
+  line-height: 40px;
+  padding: 18px 0;
+  height: 116px;
+  font-size: 24px;/*px*/
+}
+
+.trade-money-list.trade-money-time li strong {
+  font-size: 36px;/*px*/
+  font-weight: normal;
+}
+
+.trade-money-list.trade-money-time li span {
+  font-size: 32px;/*px*/
+}
+
 .trade-detail {
   background: #fff;
 }
@@ -145,7 +266,7 @@
 
 .trade-bottom .check-box {
   color: #999999;
-  font-size: 24px;
+  font-size: 24px;/*px*/
 }
 
 .trade-rules {
