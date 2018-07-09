@@ -10,6 +10,7 @@ import * as Filter from './utils/filter'
 import 'mint-ui/lib/style.css'
 import './assets/css/reset.css'
 import './assets/css/app.css'
+import './assets/css/main.css'
 Vue.prototype.$axios = Axios
 Vue.config.productionTip = false
 Vue.use(MintUI)
